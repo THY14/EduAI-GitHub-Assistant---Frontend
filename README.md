@@ -24,6 +24,11 @@ Run the Developer server:
 ```sh
 pnpm dev
 ```
+If you're not on the lastest version
+```sh 
+nvm i lastest
+nvm use lastest
+```
 Build for production:
 ```sh
 pnpm build
