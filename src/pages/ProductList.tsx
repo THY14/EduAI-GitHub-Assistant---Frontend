@@ -7,7 +7,7 @@ const ProductList: React.FC = () => {
   const { data, isLoading, isError, error } = useProducts();
 
   if (isLoading) return <p>Loading products...</p>;
-  if (isError) return <p>Error: {error.message}</p>;
+  if (isError) return <p>Error: {error?.message}</p>;
 
   return (
     <div>
