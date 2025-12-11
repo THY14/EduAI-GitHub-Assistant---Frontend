@@ -1,5 +1,5 @@
 import React from "react";
-import { useUIStore } from "../../app/store/uiStore";
+import { useUIStore } from "../../../app/store/uiStore";
 
 const SidebarButton: React.FC = () => {
   const toggleSidebar = useUIStore((state) => state.toggleSidebar);

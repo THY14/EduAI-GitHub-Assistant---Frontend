@@ -1,6 +1,6 @@
 import React from "react";
 import { useClasses } from "../hooks/useClasses";
-import { formatDate } from "../../../shared/utils/formatDate";
+import { formatDate } from "../../../../shared/utils/formatDate";
 
 export const AssignmentDetail: React.FC = () => {
   const { selectedAssignment } = useClasses();

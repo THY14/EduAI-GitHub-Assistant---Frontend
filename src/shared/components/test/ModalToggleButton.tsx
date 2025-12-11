@@ -1,5 +1,5 @@
 import React from "react";
-import { useUIStore } from "../../app/store/uiStore";
+import { useUIStore } from "../../../app/store/uiStore";
 
 const ModalToggleButton: React.FC = () => {
   const openModal = useUIStore((state) => state.openModal);

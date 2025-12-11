@@ -1,6 +1,6 @@
 import React from "react";
-import { useProducts } from "../features/products/hooks/useProducts";
-import ProductCard from "../features/products/components/ProductCard";
+import { useProducts } from "../../features/test/products/hooks/useProducts";
+import ProductCard from "../../features/test/products/components/ProductCard";
 import { Link } from "react-router-dom";
 
 const ProductList: React.FC = () => {

@@ -1,5 +1,5 @@
 import React from "react";
-import { ClassList, AssignmentList, AssignmentDetail } from ".././features/classes";
+import { ClassList, AssignmentList, AssignmentDetail } from "../../features/test/classes";
 
 const Dashboard = () => {
   return (

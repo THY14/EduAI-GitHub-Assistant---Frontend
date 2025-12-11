@@ -1,18 +1,24 @@
-import React from "react";
-import { Routes, Route, Navigate } from "react-router-dom";
-import HomePage from "../../pages/HomePage";
-import ProductsPage from "../../pages/ProductsPage";
-import ProductList from "../../pages/ProductList";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import ChallengeLayout from "../layout/ChallengeLayout";
+import MainLayout from "../layout/MainLayout";
 
-const AppRoutes: React.FC = () => {
-  return (
-    <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/products" element={<ProductsPage />} />
-      <Route path="/products-list" element={<ProductList />} />
-      <Route path="*" element={<div>not found</div>} /> {/* 404 page */}
-    </Routes>
-  );
-};
+const router = createBrowserRouter([
+  {
+    element: <MainLayout />,
+    children: [
+      { path: "/", element: <MainLayout /> },
+          // { index: true, element: <NoAssignmentSelected /> }, // nothing selected
 
-export default AppRoutes;
+    ],
+  },
+  {
+    element: <ChallengeLayout />,
+    children: [
+      // { path: "/challenge/:challengeId", element: <Challenge /> },
+    ],
+  },
+]);
+
+export function AppRouter() {
+  return <RouterProvider router={router} />;
+}

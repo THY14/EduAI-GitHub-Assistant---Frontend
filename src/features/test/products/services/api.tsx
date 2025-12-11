@@ -1,4 +1,4 @@
-import { PRODUCTS_ENDPOINT } from "../../../shared/constansts/api";
+import { PRODUCTS_ENDPOINT } from "../../../../shared/constansts/api";
 
 // src/features/products/api.ts
 export interface Product {
